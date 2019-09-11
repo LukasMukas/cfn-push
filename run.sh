@@ -25,6 +25,7 @@ then
       echo "$fail"
     fi
     echo "nag passed"
+    aws s3 cp $1 $2
   else 
     echo "$fail"
     exit 1
